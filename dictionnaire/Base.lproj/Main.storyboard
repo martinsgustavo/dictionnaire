@@ -26,6 +26,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bkgSujetIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MAp-Fp-EH4">
+                                        <rect key="frame" x="65" y="25" width="252" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bkgTranslation.png" translatesAutoresizingMaskIntoConstraints="NO" id="JTI-qp-ce4">
+                                        <rect key="frame" x="20" y="475" width="339" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kCO-Mk-tbX">
                                         <rect key="frame" x="65" y="80" width="252" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -56,7 +64,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tittle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdh-Bd-Xji">
                                         <rect key="frame" x="65" y="25" width="252" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -111,7 +119,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez le subject" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Awl-Io-wrd">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez le sujet" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Awl-Io-wrd">
                                         <rect key="frame" x="77" y="91" width="220" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -132,16 +140,6 @@
                                             <outlet property="delegate" destination="enV-6F-hpu" id="UmK-y2-zyO"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcF-5a-UON">
-                                        <rect key="frame" x="126" y="398" width="123" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="saveButton.png">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="createDictionnary:" destination="enV-6F-hpu" eventType="touchUpInside" id="9Wi-C2-CIx"/>
-                                        </connections>
-                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chainIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="N3U-Hc-PCq">
                                         <rect key="frame" x="157" y="250" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -156,6 +154,24 @@
                                             <outlet property="delegate" destination="enV-6F-hpu" id="dbg-62-4QG"/>
                                         </connections>
                                     </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="traductionIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="IqM-9r-tt0">
+                                        <rect key="frame" x="111" y="172" width="152" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sujetIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="h6W-pj-Ex0">
+                                        <rect key="frame" x="111" y="51" width="152" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcF-5a-UON">
+                                        <rect key="frame" x="112" y="356" width="151" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="saveButton.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createDictionnary:" destination="enV-6F-hpu" eventType="touchUpInside" id="9Wi-C2-CIx"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -198,8 +214,12 @@
         <image name="arrowIconReverso.png" width="1024" height="1024"/>
         <image name="arrowIconReverso2.png" width="1024" height="1024"/>
         <image name="bkgReverso.png" width="1242" height="2208"/>
+        <image name="bkgSujetIcon.png" width="1024" height="250"/>
+        <image name="bkgTranslation.png" width="1024" height="250"/>
         <image name="chainIcon.png" width="1024" height="1024"/>
         <image name="logoReverso.png" width="1579" height="472"/>
-        <image name="saveButton.png" width="1024" height="313"/>
+        <image name="saveButton.png" width="1024" height="250"/>
+        <image name="sujetIcon.png" width="1024" height="250"/>
+        <image name="traductionIcon.png" width="1024" height="250"/>
     </resources>
 </document>

@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        defObjFrench.removeKey(theKey: "french")
 //        defObjFrench.removeKey(theKey: "english")
         manageUserDef()
-        translation.text! = "cliquez sur le mot pour voir la traduction."
+        translation.text! = "cliquez sur le mot pour voir la traduction"
         translation.textColor = UIColor.gray
         subjTittle.text = subjText
         dictOfWords = Dictionary (uniqueKeysWithValues: zip(arrOfFrench, arrOfEnglish))
@@ -29,13 +29,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func chooseLanguage(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             dictOfWords = Dictionary (uniqueKeysWithValues: zip(arrOfFrench, arrOfEnglish))
-            translation.text = "cliquez sur le mot pour voir la traduction."
+            translation.text = "cliquez sur le mot pour voir la traduction"
             translation.textColor = UIColor.gray
             sender.setTitle("Français", forSegmentAt: 0)
             sender.setTitle("Anglais", forSegmentAt: 1)
         } else {
             dictOfWords = Dictionary (uniqueKeysWithValues: zip(arrOfEnglish, arrOfFrench))
-            translation.text = "click on the word to see the translation."
+            translation.text = "click on the word to see the translation"
             translation.textColor = UIColor.gray
             sender.setTitle("French", forSegmentAt: 0)
             sender.setTitle("English", forSegmentAt: 1)
